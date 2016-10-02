@@ -8,3 +8,36 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
+
+/*So I decided to go with a ratio of 8:9*/
+
+html {
+  font-size: 1.25em; /* 20px */
+  line-height: 1.5em; /* 24px = 1 gridline*/
+  padding: 1.5em 1.333em; /* 24px  21.333px*/
+}
+
+h1 {
+  font-size: 1.777em; /* 28.43px */
+  line-height: 1.688em; /* 48px @ 28.43px em */
+}
+
+p,
+ul {
+  padding-bottom: 1.5em; /* 24px */
+}
+
+li {
+  padding-bottom: 0.75em; /* 12px = half gridline*/
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+/* ===== MODULAR STYLES ===== */
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 1.333em;
+}
