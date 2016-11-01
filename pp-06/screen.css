@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 /* stylelint-disable */
 /* Keep reset CSS to one minified line */
@@ -27,33 +27,55 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 /* ==== LAYOUT STYLES ==== */
-.flexbox #content {
+#content {
   display: flex;
 }
 
-.flexbox #three,
-.flexbox #two,
-.flexbox #one {
-  width: 100vw;
-  height: 50vw;
+#three,
+#two,
+#one {
+  width: 10vw;
+  height: 10vw;
 }
 
-.flexbox #three {
+#three {
   order: 3;
 }
 
-.flexbox #two {
+#two {
   order: 2;
 }
 
-.flexbox #one {
+#one {
   order: 1;
 }
 
 @media screen and (min-width: 600px) {
-
+  #content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #three{
+    width:100%;
+  }
+  #two{
+    width:50%;
+  }
+  #one{
+    width:50%;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
+  #content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #three,
+  #two,
+  #one {
+    width: 33%;
+  }
 }
