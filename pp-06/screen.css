@@ -34,7 +34,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .flexbox #three,
 .flexbox #two,
 .flexbox #one {
-
+  width: 100vw;
+  height: 50vw;
 }
 
 .flexbox #three {
