@@ -3,10 +3,11 @@
   outputs the correct value for x (5).
 */
 
-var x = 5;
+var x;
 
 function double(num) {
   x = num * 2;
+  x = 5;
   return x;
 }
 
